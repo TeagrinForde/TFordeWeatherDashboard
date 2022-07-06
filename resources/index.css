@@ -1,0 +1,27 @@
+.jumbotron {
+    text-align: center;
+    height: 150px;
+    background-color:darkslateblue;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.boxLeft {
+    background-color: mediumslateblue;
+    padding-top: 5px;
+}
+
+.fiveDays {
+    display: flex;
+}
+
+.day {
+    width: 250px;
+}
+
+.cityInfo {
+    color: white;
+}
