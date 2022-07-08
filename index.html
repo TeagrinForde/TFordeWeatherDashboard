@@ -23,21 +23,22 @@
     <main class="container col-12">
         <div class="boxLeft col-3">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="City, State" aria-label="Destination" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="City, State" aria-label="Destination"
+                    aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2">SUBMIT</span>
+                    <span class="input-group-text" id="basic-addon2">SUBMIT</span>
                 </div>
-              </div>
+            </div>
 
-              <ul class="prevCities" id="cityList"></ul>
+            <ul class="prevCities" id="cityList"></ul>
         </div>
 
         <div class="boxRight col-9">
             <div class="today">
                 <div class="card text-white bg-info mb-3">
-                    <div class="date" id="dateInfo">Today's Date:</div>
+                    <div class="date" id="dateInfo"></div>
                     <div class="card-body">
-                        <h5 class="city" id="cityName">Destination:</h5>
+                        <h5 class="city" id="cityName">Atlanta, GA</h5>
                         <ul class="cityInfo" id="cityList"></ul>
                     </div>
                 </div>
@@ -46,9 +47,9 @@
             <div class="fiveDays">
 
                 <div class="card">
-                    <div class="day" id="dateOne">
+                    <div class="day">
                         <img class="icon" alt="Wheather Icon" src="#!">
-                        <h5 class="card-title">Day 1</h5>
+                        <h5 class="card-title" id="dateOne">Day 1</h5>
                         <p class="temp" id="tempOne">Temperature:</p>
                         <p class="wind" id="windOne">Wind:</p>
                         <p class="humid" id="humidOne">Humidty:</p>
@@ -56,9 +57,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="day" id="dateTwo">
+                    <div class="day">
                         <img class="icon" alt="Wheather Icon" src="#!">
-                        <h5 class="card-title">Day 2</h5>
+                        <h5 class="card-title" id="dateTwo">Day 2</h5>
                         <p class="temp" id="tempTwo">Temperature:</p>
                         <p class="wind" id="windTwo">Wind:</p>
                         <p class="humid" id="humidTwo">Humidty:</p>
@@ -66,9 +67,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="day" id="dateThree">
+                    <div class="day">
                         <img class="icon" alt="Wheather Icon" src="#!">
-                        <h5 class="card-title">Day 3</h5>
+                        <h5 class="card-title" id="dateThree">Day 3</h5>
                         <p class="temp" id="tempThree">Temperature:</p>
                         <p class="wind" id="windThree">Wind:</p>
                         <p class="humid" id="humidThree">Humidty:</p>
@@ -76,9 +77,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="day" id="dateFour">
+                    <div class="day">
                         <img class="icon" alt="Wheather Icon" src="#!">
-                        <h5 class="card-title">Day 4</h5>
+                        <h5 class="card-title" id="dateFour">Day 4</h5>
                         <p class="temp" id="tempFour">Temperature:</p>
                         <p class="wind" id="windFour">Wind:</p>
                         <p class="humid" id="humidFour">Humidty:</p>
@@ -86,9 +87,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="day" id="dateFive">
+                    <div class="day">
                         <img class="icon" alt="Wheather Icon" src="#!">
-                        <h5 class="card-title">Day 5</h5>
+                        <h5 class="card-title" id="dateFive">Day 5</h5>
                         <p class="temp" id="tempFive">Temperature:</p>
                         <p class="wind" id="windFive">Wind:</p>
                         <p class="humid" id="humidFive">Humidty:</p>
@@ -96,6 +97,7 @@
                 </div>
 
             </div>
+        </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
