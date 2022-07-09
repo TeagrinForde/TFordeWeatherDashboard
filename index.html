@@ -23,7 +23,7 @@
     <main class="container col-12">
         <div class="boxLeft col-3">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="City, State" aria-label="Destination"
+                <input type="text" class="form-control" id="cityInput" placeholder="City, State" aria-label="Destination"
                     aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2">SUBMIT</span>
@@ -38,8 +38,12 @@
                 <div class="card text-white bg-info mb-3">
                     <div class="date" id="dateInfo"></div>
                     <div class="card-body">
-                        <h5 class="city" id="cityName">Atlanta, GA</h5>
-                        <ul class="cityInfo" id="cityList"></ul>
+                        <h5 class="city" id="cityName">City Name</h5><img id="cityIcon">
+                        <ul class="cityInfo" id="cityList">
+                            <li id="cityTemp">Temperature</li>
+                            <li id="cityWind">Wind Speed</li>
+                            <li id="cityHumid">Humidty</li>
+                        </ul>
                     </div>
                 </div>
             </div>
