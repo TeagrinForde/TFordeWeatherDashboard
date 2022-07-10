@@ -24,4 +24,21 @@
 
 .cityInfo {
     color: white;
+    text-align: left;
+}
+
+.cardToday {
+    display: flex;
+}
+
+.columnList {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.day h5 {
+    font-size: smaller;
 }
