@@ -20,7 +20,7 @@ function displayCity() {
     }
   }
 }
-displayCity();
+
 
 function displayResultEl(cityInput) {
   //pull time from moment website and user city input to display data

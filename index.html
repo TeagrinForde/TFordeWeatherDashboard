@@ -23,8 +23,8 @@
     <main class="container col-12">
         <div class="boxLeft col-3">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" id="cityInput" placeholder="City, State" aria-label="Destination"
-                    aria-describedby="basic-addon2">
+                <input type="text" class="form-control" id="cityInput" placeholder="City, State"
+                    aria-label="Destination" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2">SUBMIT</span>
                 </div>
@@ -38,13 +38,25 @@
                 <div class="card text-white bg-info mb-3">
                     <div class="date" id="dateInfo"></div>
                     <div class="card-body">
-                        <div  class="icon" alt="Weather Icon" id="cityIcon"></div>
-                        <h5 class="city" id="cityName">City Name</h5>
-                        <ul class="cityInfo" id="cityList">
-                            <li id="cityTemp">Temperature</li>
-                            <li id="cityWind">Wind Speed</li>
-                            <li id="cityHumid">Humidty</li>
-                        </ul>
+                        <div class="left">
+                            <div class="icon" alt="Weather Icon" id="cityIcon"></div>
+                            <h5 class="city" id="cityName">City Name</h5>
+                        </div>
+                        <div class="labels">
+                            <p>Temperature:</p>
+                            <p>Wind Speed:</p>
+                            <p>Humidty:</p>
+                        </div>
+                        <div class="cityInfo" id="cityList">
+                            <p id="cityTemp">Temperature</p>
+                            <p id="cityWind">Wind Speed</p>
+                            <p id="cityHumid">Humidty</p>
+                        </div>
+                        <div class="labelDay">
+                            <p>°F</p>
+                            <p>mph</p>
+                            <p>%</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,9 +67,18 @@
                     <div class="day">
                         <img class="icon" alt="Wheather Icon" src="http://openweathermap.org/img/wn/10d@2x.png">
                         <h5 class="card-title" id="dateOne">Day 1</h5>
-                        <p class="temp" id="tempOne">Temperature:</p>
-                        <p class="wind" id="windOne">Wind:</p>
-                        <p class="humid" id="humidOne">Humidty:</p>
+                        <div class="units">
+                            <div class="values">
+                                <p class="temp" id="tempOne"></p>
+                                <p class="wind" id="windOne"></p>
+                                <p class="humid" id="humidOne"></p>
+                            </div>
+                            <div class="labelDay">
+                                <p>°F</p>
+                                <p>mph</p>
+                                <p>%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -65,9 +86,18 @@
                     <div class="day">
                         <img class="icon" alt="Wheather Icon" src="http://openweathermap.org/img/wn/10d@2x.png">
                         <h5 class="card-title" id="dateTwo">Day 2</h5>
-                        <p class="temp" id="tempTwo">Temperature:</p>
-                        <p class="wind" id="windTwo">Wind:</p>
-                        <p class="humid" id="humidTwo">Humidty:</p>
+                        <div class="units">
+                            <div class="values">
+                                <p class="temp" id="tempTwo"></p>
+                                <p class="wind" id="windTwo"></p>
+                                <p class="humid" id="humidTwo"></p>
+                            </div>
+                            <div class="labelDay">
+                                <p>°F</p>
+                                <p>mph</p>
+                                <p>%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -75,19 +105,38 @@
                     <div class="day">
                         <img class="icon" alt="Wheather Icon" src="http://openweathermap.org/img/wn/10d@2x.png">
                         <h5 class="card-title" id="dateThree">Day 3</h5>
-                        <p class="temp" id="tempThree">Temperature:</p>
-                        <p class="wind" id="windThree">Wind:</p>
-                        <p class="humid" id="humidThree">Humidty:</p>
+                        <div class="units">
+                            <div class="values">
+                                <p class="temp" id="tempThree"></p>
+                                <p class="wind" id="windThree"></p>
+                                <p class="humid" id="humidThree"></p>
+                            </div>
+                            <div class="labelDay">
+                                <p>°F</p>
+                                <p>mph</p>
+                                <p>%</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="card">
                     <div class="day">
                         <img class="icon" alt="Wheather Icon" src="http://openweathermap.org/img/wn/10d@2x.png">
                         <h5 class="card-title" id="dateFour">Day 4</h5>
-                        <p class="temp" id="tempFour">Temperature:</p>
-                        <p class="wind" id="windFour">Wind:</p>
-                        <p class="humid" id="humidFour">Humidty:</p>
+                        <div class="units">
+                            <div class="values">
+                                <p class="temp" id="tempFour"></p>
+                                <p class="wind" id="windFour"></p>
+                                <p class="humid" id="humidFour"></p>
+                            </div>
+                            <div class="labelDay">
+                                <p>°F</p>
+                                <p>mph</p>
+                                <p>%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -95,9 +144,18 @@
                     <div class="day">
                         <img class="icon" alt="Wheather Icon" src="http://openweathermap.org/img/wn/10d@2x.png">
                         <h5 class="card-title" id="dateFive">Day 5</h5>
-                        <p class="temp" id="tempFive">Temperature:</p>
-                        <p class="wind" id="windFive">Wind:</p>
-                        <p class="humid" id="humidFive">Humidty:</p>
+                        <div class="units">
+                            <div class="values">
+                        <p class="temp" id="tempFive"></p>
+                        <p class="wind" id="windFive"></p>
+                        <p class="humid" id="humidFive"></p>
+                        </div>
+                        <div class="labelDay">
+                            <p>°F</p>
+                            <p>mph</p>
+                            <p>%</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
 

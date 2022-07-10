@@ -14,10 +14,6 @@
     padding-top: 5px;
 }
 
-.fiveDays {
-    display: flex;
-}
-
 .day {
     width: 250px;
 }
@@ -27,18 +23,26 @@
     text-align: left;
 }
 
+.fiveDays,
+.units,
 .cardToday {
     display: flex;
 }
 
-.columnList {
+.day h5 {
+    font-size: smaller;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.values,
+.labels {
     text-align: right;
 }
 
-ul {
-    list-style: none;
-}
-
-.day h5 {
-    font-size: smaller;
+.labelDay {
+    text-align: left;
 }
