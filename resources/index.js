@@ -5,8 +5,8 @@ function saveCity() {
   var cityInputEl = document.getElementById('cityInput');
   cityArrayEl.push(cityInputEl.value);
   localStorage.setItem('cityList', JSON.stringify(cityArrayEl)); //city input  storage location
-  displayCity();
   displayResultEl(cityInputEl.value); //display list
+  displayCity();
 }
 
 function displayCity() {
@@ -20,7 +20,7 @@ function displayCity() {
     }
   }
 }
-// displayCity();  //uncomment before submission!!!
+displayCity();  
 
 function displayResultEl(cityInput) {
   //pull time from moment website and user city input to display data
@@ -98,9 +98,9 @@ function displayResultEl(cityInput) {
         console.log(data);
         document.getElementById('cityUv').innerHTML = data.current.uvi;   //uv index
         let uvi = data.current.uvi;
-        if(uvi<=2) {
+        if(uvi<=4) {
           document.getElementById('cityUv').style.backgroundColor = 'green';
-        } else if(uvi<=5 && uvi>2) {
+        } else if(uvi<=8 && uvi>4) {
           document.getElementById('cityUv').style.backgroundColor = 'yellow';
         } else {
           document.getElementById('cityUv').style.backgroundColor = 'red';
@@ -108,6 +108,14 @@ function displayResultEl(cityInput) {
       });
     })
     
-}
+};
 
-document.getElementById('basic-addon2').addEventListener('click', saveCity)
+document.getElementById('basic-addon2').addEventListener('click', saveCity);
+
+//old search information
+document.querySelectorAll('.prevCities').forEach(item => {
+  item.addEventListener('click', event => {
+    var oldCity = event.target.textContent;
+    displayResultEl(oldCity);
+  })
+})
