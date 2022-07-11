@@ -61,10 +61,10 @@ function displayResultEl(cityInput) {
       document.getElementById('humidFour').innerHTML = data.list[32].main.humidity;
       document.getElementById('windFour').innerHTML = data.list[32].wind.speed;
 
-      document.getElementById('dateFive').innerHTML = moment.unix(data.list[40].dt).format('MM/DD');
-      document.getElementById('tempFive').innerHTML = data.list[40].main.temp;
-      document.getElementById('humidFive').innerHTML = data.list[40].main.humidity;
-      document.getElementById('windFive').innerHTML = data.list[40].wind.speed;
+      document.getElementById('dateFive').innerHTML = moment.unix(data.list[39].dt).format('MM/DD');
+      document.getElementById('tempFive').innerHTML = data.list[39].main.temp;
+      document.getElementById('humidFive').innerHTML = data.list[39].main.humidity;
+      document.getElementById('windFive').innerHTML = data.list[39].wind.speed;
 
       //UV index
     //   var latEl = data.city.coord.lat;
