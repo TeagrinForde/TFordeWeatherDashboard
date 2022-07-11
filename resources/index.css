@@ -38,11 +38,12 @@
     justify-content: space-evenly;
 }
 
-.values,
+
 .labels {
     text-align: right;
 }
 
+.values,
 .labelDay {
     text-align: left;
 }
