@@ -11,6 +11,7 @@ function saveCity() {
 
 function displayCity() {
   var cityListEl = document.getElementById('cityList');
+  cityListEl.innerHTML = '';
   if (localStorage.getItem('cityList')) {
     cityArrayEl = JSON.parse(localStorage.getItem('cityList'))
     for (var i = 0; i < cityArrayEl.length; i++) {
